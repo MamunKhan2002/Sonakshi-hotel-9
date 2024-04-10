@@ -34,7 +34,7 @@ const HeroSection = () => {
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
                             <div className="text-white max-w-[555px] py-[200px]">
                                 <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
-                                <p className="text-[18px] font-cabin mb-8 font-Cabin">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
+                                <p className="text-[18px] font-cabin mb-8 font-Cabin text-[#aaaab3]">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
                                 <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const HeroSection = () => {
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
                             <div className="max-w-[555px] text-white py-[200px]">
                                 <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
-                                <p className="text-[18px] font-cabin mb-8 font-Cabin">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
+                                <p className="text-[18px] font-cabin mb-8 font-Cabin text-[#aaaab3]">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
                                 <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ const HeroSection = () => {
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
                             <div className="max-w-[555px] text-white py-[200px]">
                                 <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
-                                <p className="text-[18px] font-cabin mb-8 font-Cabin">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
+                                <p className="text-[18px] font-cabin mb-8 font-Cabin text-[#aaaab3]">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
                                 <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
                         </div>
