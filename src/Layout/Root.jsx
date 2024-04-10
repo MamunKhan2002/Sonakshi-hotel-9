@@ -1,7 +1,12 @@
+import { Outlet } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Footer from "../Pages/Shared/Footer/Footer";
 import Navbar from "../Pages/Shared/Navbar/Navbar";
-import { Outlet } from "react-router-dom";
 
+
+AOS.init();
 
 const Root = () => {
     return (

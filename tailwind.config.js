@@ -11,12 +11,13 @@ export default {
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
-    
+
     },
     extend: {
       fontFamily: {
-        roboto: 'Roboto, sans-serif',
-        anton: 'Anton, sans-serif',
+        Cabin: 'Cabin, sans-serif',
+        Lora: 'Lora, sans-serif',
+        Poppins: "Poppins, sans-serif"
       }
     },
   },

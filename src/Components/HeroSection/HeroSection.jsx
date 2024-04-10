@@ -9,6 +9,9 @@ import hero3 from "../../assets/heroPhoto/hero-3.jpg"
 // bg-[url('/img/hero-pattern.svg')]
 
 const HeroSection = () => {
+
+
+
     return (
         <div className=' relative lg:flex  lg:justify-center'>
             <Swiper
@@ -30,9 +33,9 @@ const HeroSection = () => {
                     }} className="">
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
                             <div className="text-white max-w-[555px] py-[200px]">
-                                <h1 className="text-[80px] font-lora mb-4">Sona A Luxury Hotel</h1>
-                                <p className="text-[18px] font-cabin mb-8">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
-                                <a className="pb-4 border-b border-[#dfa974]" href="">DISCOVER NOW</a>
+                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
+                                <p className="text-[18px] font-cabin mb-8 font-Cabin">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
+                                <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
                         </div>
                     </div>
@@ -45,9 +48,9 @@ const HeroSection = () => {
                     }} className="">
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
                             <div className="max-w-[555px] text-white py-[200px]">
-                                <h1 className="text-[80px] font-lora mb-4">Sona A Luxury Hotel</h1>
-                                <p className="text-[18px] font-cabin mb-8">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
-                                <a className="pb-4 border-b border-[#dfa974]" href="">DISCOVER NOW</a>
+                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
+                                <p className="text-[18px] font-cabin mb-8 font-Cabin">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
+                                <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
                         </div>
                     </div>
@@ -60,15 +63,15 @@ const HeroSection = () => {
                     }} className="">
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
                             <div className="max-w-[555px] text-white py-[200px]">
-                                <h1 className="text-[80px] font-lora mb-4">Sona A Luxury Hotel</h1>
-                                <p className="text-[18px] font-cabin mb-8">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
-                                <a className="pb-4 border-b border-[#dfa974]" href="">DISCOVER NOW</a>
+                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
+                                <p className="text-[18px] font-cabin mb-8 font-Cabin">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
+                                <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
                         </div>
                     </div>
                 </SwiperSlide>
             </Swiper>
-            <div className="flex justify-center mx-auto border-2  bg-white bg-opacity-15 p-3 lg:absolute lg:bottom-10 bottom-full rounded-md space-y-2 z-10 mt-4">
+            <div className="flex font-Poppins justify-center mx-auto border-2  bg-white bg-opacity-15 p-3 lg:absolute lg:bottom-10 bottom-full rounded-md space-y-2 z-10 mt-4">
                 <div className='flex  flex-col w-full lg:flex-row lg:items-end gap-4'>
                     <div className=' w-6/12'>
                         <p className="mb-[10px] text-white">Check In:</p>

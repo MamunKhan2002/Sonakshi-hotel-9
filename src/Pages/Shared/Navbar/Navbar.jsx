@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="border-b-2">
+            <div className="border-b-2 font-Poppins">
                 <div className="hidden w-11/12 max-w-6xl mx-auto lg:flex justify-between ">
                     <div className="text-base font-cabin flex ">
                         <p className="py-3 flex items-center gap-1 pr-[14px] border-r-2"><span className="text-[#dfa974]"><FaPhoneAlt /></span> <a href="tel:+4733378901">+47 333 78 901</a></p>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <img src={logo} alt="" />
                 </div>
                 <div className="">
-                    <ul className={`top-0 h-full lg:h-[21px] lg:flex gap-5 pt-[80px] pl-[30px] z-40 pr-[30px] pb-[30px] lg:p-0 absolute 
+                    <ul className={`top-0 font-Cabin uppercase h-full lg:h-[21px] lg:flex gap-5 pt-[80px] pl-[30px] z-40 pr-[30px] pb-[30px] lg:p-0 absolute 
                     ${showMenu ? "duration-700" : "-left-[500px] duration-700"} bg-[#dfa974] w-[300px] lg:w-full lg:bg-white lg:static left-0`}>
                         <div className="mb-10 flex justify-center">
                             <img src={logo} alt="" />
@@ -77,7 +77,7 @@ const Navbar = () => {
                         <button className="btn hover:bg-[#dfa974] text-white bg-[#dfa974] lg:hidden ml-5 mt-10">Login</button>
                         <button className="btn hover:bg-[#dfa974] text-white bg-[#dfa974] lg:hidden ml-5 mt-10">Register</button>
                     </ul>
-                    <Link to="/login"><button className="border-2 text-xl border-[#dfa974] px-3 py-2 text-black ml-5 hidden lg:flex items-center gap-2"><CiLogin ></CiLogin>Login</button></Link>
+                    <Link to="/login"><button className="border-2 text-xl border-[#dfa974] px-3 py-2 text-black ml-5 hidden lg:flex items-center gap-2 font-Lora"><CiLogin ></CiLogin>Login</button></Link>
                     <button className='lg:hidden text-[#dfa974]' onClick={() => setShoeMenu(!showMenu)}><Hamburger label="Show menu" /></button>
                 </div>
             </div>
