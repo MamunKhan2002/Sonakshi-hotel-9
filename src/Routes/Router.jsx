@@ -9,6 +9,7 @@ import Rooms from "../Pages/Rooms/Rooms";
 import UserProfile from "../Pages/UserProfile/UserProfile";
 import Contact from "../Pages/Contact/Contact";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import RoomDetails from "../Pages/Rooms/RoomDetails";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: "/rooms",
                 element: <Rooms></Rooms>
+            },
+            {
+                path: "/roomCard/:id",
+                element: <RoomDetails></RoomDetails>
             },
             {
                 path: "/userProfile",

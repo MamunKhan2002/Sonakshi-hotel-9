@@ -1,0 +1,28 @@
+/* Hotel room card */
+
+.parent {
+  position: relative;
+  overflow: hidden;
+  /* display: inline-block; */
+}
+
+.child {
+  position: absolute;
+  /* bottom: -100%; */
+  bottom: 280px;
+  transition-duration: 0.8s;
+}
+
+/* .parent:hover .child {
+  bottom: 255px;
+  transition-duration: 0.8s;
+} */
+.child_2 {
+  transition-duration: 1.3s;
+}
+
+.parent:hover .child_2 {
+  transform: scale(1.3);
+  transition-duration: 1.3s;
+  /* border: 2px solid red; */
+}

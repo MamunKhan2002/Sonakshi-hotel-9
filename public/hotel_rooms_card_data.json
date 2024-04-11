@@ -1,0 +1,80 @@
+[
+    {
+        "id": "001",
+        "title": "Luxury Suite",
+        "name": "Royal Suite",
+        "description": "Indulge in luxury with our Royal Suite. This spacious and elegantly designed suite offers stunning views and top-notch amenities.",
+        "room_img": "https://i.ibb.co/ZXbg9rn/modern-studio-apartment-design-with-bedroom-living-space.jpg",
+        "room_size": "120 sqm",
+        "max_people": 3,
+        "price": "$500 per night",
+        "status": [
+            "rent"
+        ]
+    },
+    {
+        "id": "002",
+        "title": "Executive Room",
+        "name": "Executive Suite",
+        "description": "Experience comfort and style in our Executive Suite. Ideal for business travelers or those seeking a bit of extra space and luxury.",
+        "room_img": "https://i.ibb.co/C2Fxmgs/3d-rendering-beautiful-comtemporary-luxury-bedroom-suite-hotel-with-tv.jpg",
+        "room_size": "80 sqm",
+        "max_people": 2,
+        "price": "$300 per night",
+        "status": [
+            "sale"
+        ]
+    },
+    {
+        "id": "003",
+        "title": "Family Room",
+        "name": "Family Suite",
+        "description": "Enjoy quality time with your loved ones in our spacious Family Suite. Equipped with all the essentials for a comfortable stay.",
+        "room_img": "https://i.ibb.co/4FWZwGx/3d-rendering-luxury-modern-bedroom-suite-hotel-with-tv-cabinet-1.jpg",
+        "room_size": "100 sqm",
+        "max_people": 4,
+        "price": "$400 per night",
+        "status": [
+            "sale"
+        ]
+    },
+    {
+        "id": "004",
+        "title": "Deluxe Room",
+        "name": "Deluxe Suite",
+        "description": "Relax and unwind in our Deluxe Suite. Perfect for couples or solo travelers looking for a cozy retreat.",
+        "room_img": "https://i.ibb.co/k3xRNGW/interior-modern-comfortable-hotel-room.jpg",
+        "room_size": "60 sqm",
+        "max_people": 2,
+        "price": "$250 per night",
+        "status": [
+            "sale"
+        ]
+    },
+    {
+        "id": "005",
+        "title": "Ocean View Room",
+        "name": "Ocean Suite",
+        "description": "Wake up to breathtaking ocean views in our Ocean Suite. Experience the ultimate beachfront luxury.",
+        "room_img": "https://i.ibb.co/Pws4hRm/luxury-classic-modern-bedroom-suite-hotel.jpg",
+        "room_size": "90 sqm",
+        "max_people": 2,
+        "price": "$450 per night",
+        "status": [
+            "rent"
+        ]
+    },
+    {
+        "id": "006",
+        "title": "Penthouse Suite",
+        "name": "Penthouse",
+        "description": "Live the high life in our luxurious Penthouse Suite. Unparalleled views and lavish amenities await.",
+        "room_img": "https://i.ibb.co/yRFd71z/luxury-bedroom-hotel.jpg",
+        "room_size": "200 sqm",
+        "max_people": 4,
+        "price": "$800 per night",
+        "status": [
+            "sale"
+        ]
+    }
+]

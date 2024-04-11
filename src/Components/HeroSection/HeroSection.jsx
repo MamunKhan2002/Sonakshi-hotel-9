@@ -13,7 +13,7 @@ const HeroSection = () => {
 
 
     return (
-        <div className=' relative lg:flex  lg:justify-center'>
+        <div className='relative lg:flex lg:justify-center'>
             <Swiper
                 navigation={true}
                 pagination={{
@@ -32,9 +32,9 @@ const HeroSection = () => {
 
                     }} className="">
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
-                            <div className="text-white max-w-[555px] py-[200px]">
-                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
-                                <p className="text-[18px] font-cabin mb-8 font-Cabin text-[#aaaab3]">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
+                            <div className="text-white py-[200px]">
+                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Experience Unparalleled Comfort</h1>
+                                <p className="text-[18px] font-cabin mb-8 font-Cabin max-w-[555px] text-[#aaaab3]">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
                                 <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
                         </div>
