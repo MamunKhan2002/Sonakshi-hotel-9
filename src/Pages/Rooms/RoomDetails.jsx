@@ -1,3 +1,8 @@
+import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { useContext, useEffect, useState } from 'react';
+import { HotelDataContext } from '../../Providers/HotelDataProvider';
+// React icon is here....
 import { GiCheckMark } from "react-icons/gi";
 import { CiWifiOn } from "react-icons/ci";
 import { FaBath, FaParking, FaSwimmingPool } from "react-icons/fa";
@@ -5,24 +10,38 @@ import { PiCoffeeLight } from "react-icons/pi";
 import { MdOutlineBreakfastDining, MdOutlineSportsGymnastics, MdOutlineLocalDrink } from "react-icons/md";
 
 
-import PropTypes from 'prop-types';
-
 const RoomDetails = () => {
+    const { roomsData } = useContext(HotelDataContext);
+    const [singleRoom, setSIngleRoom] = useState(null);
+    // const {title, status, price, max_people, room_size, room_img, description} = singleRoom;
+    console.log(roomsData);
+
+    const { id } = useParams();
+
+    console.log(id);
+    useEffect(() => {
+        console.log(roomsData);
+
+        const findRoomId = roomsData?.find(room => room.id === id);
+        setSIngleRoom(findRoomId);
+    }, [roomsData]);
+
+    console.log(singleRoom);
 
     return (
         <div className=''>
             <div className='relative '>
                 <figure className='mt-5 '>
-                    <img className='h-[250px] md:h-[350px] lg:h-[500px] w-full object-cover object-center' src="https://i.ibb.co/cX687H5/437.jpg" alt="" />
+                    <img className='h-[250px] md:h-[350px] lg:h-[500px] w-full object-cover object-center' src={singleRoom?.room_img} alt="" />
                 </figure>
             </div>
             {/* details container */}
             <div className='w-11/12 max-w-6xl mx-auto md:flex gap-10 mt-16 mb-8 md:mb-10 lg:mb-16'>
                 {/* left side container */}
                 <div className='w-full md:w-1/2 lg:w-2/3'>
-                    <h1 className='text-3xl font-Lora mb-4'>Luxury Suite</h1>
-                    <p className='text-base font-Cabin text-[#AAA] mb-4'>Indulge in luxury with our Royal Suite. This spacious and elegantly designed suite offers stunning views and top-notch amenities.</p>
-                    <img src="https://i.ibb.co/ZXbg9rn/modern-studio-apartment-design-with-bedroom-living-space.jpg" alt="" />
+                    <h1 className='text-3xl font-Lora mb-4'>{singleRoom?.title}</h1>
+                    <p className='text-base font-Cabin text-[#AAA] mb-4'>{singleRoom?.description}</p>
+                    <img src={singleRoom?.room_img} alt="" />
                     <h2 className='text-2xl font-Lora mt-10'>Room Facilities</h2>
                     <p className='text-base text-[#AAA] mt-2'>The standard hotel room amenities may vary depending on the hotel's rating and location, but typically include a bed and linens, bathroom with towels and toiletries, hairdryer, television, telephone, wi-fi, desk, wardrobe, minibar, kettle, iron, safe, housekeeping and air conditioning.</p>
                     <div className='flex gap-16 capitalize text-[18px] text-[#AAA] font-Lora mt-8'>
