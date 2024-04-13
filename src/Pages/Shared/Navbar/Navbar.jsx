@@ -1,5 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useContext, useState } from "react";
+import Swal from 'sweetalert2';
+
 // react icon is here...
 import { CiLogin, CiLogout } from "react-icons/ci";
 import { Twirl as Hamburger } from 'hamburger-react'
@@ -13,6 +15,14 @@ const Navbar = () => {
     const { Logout, user } = useContext(AuthContext);
     const handleSignOut = () => {
         Logout()
+            .then(response => {
+                console.log(response);
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Logout Successful !",
+                    icon: "success"
+                });
+            })
     }
 
     return (

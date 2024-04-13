@@ -1,13 +1,16 @@
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2';
+
 
 import Lottie from "lottie-react";
-import animateLogin from '../../assets/loitte_data/Animation - 1712725869587.json'
-import { Link } from "react-router-dom";
+import animateLogin from '../../assets/loitte_data/Animation - 1712725869587.json';
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/FirebaseAuthProvider";
 
 const Login = () => {
     const { LoginUser } = useContext(AuthContext);
+    const navigate = useNavigate();
     // console.log(LoginUser);
 
     const { register, handleSubmit, reset } = useForm();
@@ -18,6 +21,12 @@ const Login = () => {
             .then(response => {
                 reset()
                 console.log(response.user);
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Login Successful !",
+                    icon: "success",
+                });
+                navigate(`/`)
             })
             .catch(error => {
                 console.error(error)
