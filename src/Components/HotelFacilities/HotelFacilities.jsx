@@ -6,7 +6,7 @@ const HotelFacilities = () => {
         <div className="w-11/12 max-w-7xl mx-auto overflow-hidden lg:my-40">
             {/* Title & description is here..*/}
             <div className="text-center pb-20 space-y-3">
-                <h3 className="text-base font-base font-Poppins border-b-2 w-fit mx-auto border-[#dfa974] pb-3">OUR SERVICES</h3>
+                <h3 className="text-base font-base font-Poppins border-b-2 w-fit mx-auto border-[#dfa974] space-y-3 pb-3">OUR SERVICES</h3>
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-Lora">Hotel Facilities</h1>
             </div>
             {/* Services are here.. */}
