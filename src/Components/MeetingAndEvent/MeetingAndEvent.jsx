@@ -4,7 +4,7 @@ import Meeting_Photo_2 from "../../assets/Meeting_Event_Photo/mee.jpg"
 
 const MeetingAndEvent = () => {
     return (
-        <div className="flex items-center justify-between w-11/12 mx-auto">
+        <div className="flex items-center justify-between w-11/12 mx-auto md:mb-[130px]">
             <figure
             data-aos="fade-right"
             data-aos-duration="1000"

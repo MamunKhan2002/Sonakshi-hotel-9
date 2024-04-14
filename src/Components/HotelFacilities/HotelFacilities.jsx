@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const HotelFacilities = () => {
     return (
-        <div className="w-11/12 max-w-7xl mx-auto overflow-hidden lg:my-40">
+        <div className="w-11/12 max-w-7xl mx-auto overflow-hidden md:my-[130px]">
             {/* Title & description is here..*/}
             <div className="text-center pb-20 space-y-3">
                 <h3 className="text-base font-base font-Poppins border-b-2 w-fit mx-auto border-[#dfa974] space-y-3 pb-3">OUR SERVICES</h3>

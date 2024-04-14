@@ -69,7 +69,7 @@ const Register = () => {
                             required: "This field is required"
                         })}
                             className="border-2 outline-none rounded-lg w-full py-2 px-3 focus:border-[#dea874]" placeholder="Email" type="email" name="email" id="" />
-                        <small className="text-red-500">{errors.email?.message}</small>
+                        <small className="text-red-500 text-[13px]">{errors.email?.message} !</small>
                     </div>
                     <div className="text-xl font-Lora mb-6 space-y-1">
                         <p>Photo URL :</p>
@@ -92,7 +92,7 @@ const Register = () => {
                         {/* <small className="text-red-500">{errors.password?.type === "required" && "This field is required"}</small> */}
                         {/* <small className="text-red-500">{errors.password?.type === "minLength" && "Minimum 8 characters"}</small> */}
                     </div>
-                    <small className="text-red-500">{errors.password?.message}</small>
+                    <small className="text-red-500">{errors.password?.message} !</small>
                     <div className="font-Lora mt-2 space-y-1">
                         <input type="checkbox" />
                         <label htmlFor=""> I agree to the <small className="underline cursor-pointer font-thin">Terms & Conditions</small></label>

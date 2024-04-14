@@ -10,7 +10,7 @@ const Rooms = () => {
     console.log(roomsData);
 
     return (
-        <div className="w-11/12 max-w-6xl mx-auto mt-40">
+        <div className="w-11/12 max-w-6xl mx-auto">
             <div className="text-center font-Lora my-10 space-y-2">
                 <h1
                     data-aos="fade-down"

@@ -32,8 +32,8 @@ const HeroSection = () => {
 
                     }} className="">
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
-                            <div className="text-white py-[200px]">
-                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Experience Unparalleled Comfort</h1>
+                            <div className="max-w-[555px] text-white py-[200px]">
+                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sonaksi A Luxury Hotel</h1>
                                 <p className="text-[18px] font-cabin mb-8 font-Cabin max-w-[555px] text-[#aaaab3]">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
                                 <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
@@ -48,7 +48,7 @@ const HeroSection = () => {
                     }} className="">
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
                             <div className="max-w-[555px] text-white py-[200px]">
-                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
+                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sonaksi A Luxury Hotel</h1>
                                 <p className="text-[18px] font-cabin mb-8 font-Cabin text-[#aaaab3]">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
                                 <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
@@ -63,7 +63,7 @@ const HeroSection = () => {
                     }} className="">
                         <div className="w-11/12 max-w-6xl mx-auto mt-6 relative">
                             <div className="max-w-[555px] text-white py-[200px]">
-                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sona A Luxury Hotel</h1>
+                                <h1 className="text-[80px] font-lora mb-4 font-Lora">Sonaksi A Luxury Hotel</h1>
                                 <p className="text-[18px] font-cabin mb-8 font-Cabin text-[#aaaab3]">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</p>
                                 <a className="pb-4 border-b border-[#dfa974] font-Lora" href="">DISCOVER NOW</a>
                             </div>
@@ -71,25 +71,25 @@ const HeroSection = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            <div className="flex font-Poppins justify-center mx-auto border-2  bg-white bg-opacity-15 p-3 lg:absolute lg:bottom-10 bottom-full rounded-md space-y-2 z-10 mt-4">
-                <div className='flex  flex-col w-full lg:flex-row lg:items-end gap-4'>
-                    <div className=' w-6/12'>
+            <div className="flex  font-Poppins justify-center mx-auto bg-white bg-opacity-15 p-3 lg:absolute lg:bottom-10 bottom-full rounded-md space-y-2 z-10 mt-4">
+                <div className='flex flex-col w-full lg:flex-row lg:items-end gap-4'>
+                    <div className=' w-full'>
                         <p className="mb-[10px] text-white">Check In:</p>
                         <input className="outline-none border-2 py-2 px-4 w-full" type="date" id="birthday" name="birthday"></input>
                     </div>
-                    <div className=' w-6/12'>
+                    <div className='w-full'>
                         <p className="mb-[10px] text-white">Check out:</p>
                         <input className="outline-none border-2 py-2 px-4 w-full " type="date" id="birthday" name="birthday"></input>
                     </div>
-                    <div className=' w-6/12'>
+                    <div className='w-full'>
                         <p className="mb-[10px] text-white">Guests:</p>
                         <input className="outline-none border-2 py-2 px-4 w-full " type="date" id="birthday" name="birthday"></input>
                     </div>
-                    <div className=' w-6/12'>
+                    <div className='w-full'>
                         <p className="mb-[10px] text-white">Room:</p>
                         <input className="outline-none border-2 py-2 px-4 w-full " type="date" id="birthday" name="birthday"></input>
                     </div>
-                    <button className='btn w-[180px] uppercase text-[#dfa974] outline-none bg-white hover:bg-white border-2 hover:border-[#dfa974] border-[#dfa974]'>Check Availability</button>
+                    <button className='btn lg:max-w-[180px] md:w-full uppercase text-[#dfa974] outline-none bg-white hover:bg-white border-2 hover:border-[#dfa974] border-[#dfa974]'>Check Availability</button>
                 </div>
             </div>
         </div>

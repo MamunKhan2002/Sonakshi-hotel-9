@@ -3,7 +3,7 @@ import about_img_2 from "../../assets/about_img/about-2.jpg"
 
 const AboutUs = () => {
     return (
-        <div className="border-b">
+        <div className=" mb-[60px] mb-[80px] md:mb-[130px]">
             <div className="text-center space-y-3">
                 <h3 className="text-5xl capitalize mt-20 font-Lora pb-3 border-b-2 w-fit mx-auto border-[#dfa974]">about us</h3>
                 <p className="max-w-[600px] mx-auto font-Poppins text-[#AAA]">Sona.com is a leading online accommodation site. We’re passionate about travel. Every day, we inspire and reach millions of travelers across 90 local websites in 41 languages.</p>

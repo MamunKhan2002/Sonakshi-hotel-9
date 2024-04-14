@@ -8,7 +8,7 @@ const Welcome = () => {
         <div 
         data-aos="zoom-in"
         data-aos-duration="1000"
-        className="w-11/12 max-w-6xl mx-auto navbar flex- flex-col mt-8 md:mt-10 lg:mt-20">
+        className="w-11/12 max-w-6xl mx-auto navbar flex- flex-col md:mb-[130px] mt-8 md:mt-10 lg:mt-20">
             {/* Here is the title & description */}
             <div className="flex flex-col mb-10">
                 <h3 className="uppercase text-xl font-Lora mb-3 border-b-2 w-fit mx-auto border-[#dfa974] pb-3">Sonaksi LUXURY HOTEL</h3>

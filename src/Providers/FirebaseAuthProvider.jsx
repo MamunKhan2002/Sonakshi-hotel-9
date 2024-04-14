@@ -1,11 +1,20 @@
 import PropTypes from 'prop-types';
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth"
+import {
+    GithubAuthProvider,
+    GoogleAuthProvider, createUserWithEmailAndPassword, getAuth,
+    onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut
+} from "firebase/auth"
 import app from '../FireBase/FireBase.init';
 import { createContext, useEffect, useState } from 'react';
 
+
 const auth = getAuth(app);
 
-export const AuthContext = createContext(null)
+export const AuthContext = createContext(null);
+
+// Social Providers
+const googleProvider = new GoogleAuthProvider();
+const githubProvider = new GithubAuthProvider();
 
 const FirebaseAuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
@@ -17,6 +26,28 @@ const FirebaseAuthProvider = ({ children }) => {
     const LoginUser = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
+
+    // Google Login
+    const googleLogin = () => {
+        return signInWithPopup(auth, googleProvider)
+            .then(response => {
+                console.log(response.user);
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
+    }
+    // Github Login
+    const GithubLogin = () => {
+        return signInWithPopup(auth, githubProvider)
+            .then(response => {
+                console.log(response.user);
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
+    }
+
 
     const Logout = () => {
         return signOut(auth)
@@ -38,7 +69,7 @@ const FirebaseAuthProvider = ({ children }) => {
         }
     }, [])
 
-    const authInfo = { user, createUser, LoginUser, Logout };
+    const authInfo = { user, createUser, LoginUser, Logout, googleLogin, GithubLogin };
     return (
         <AuthContext.Provider
             value={authInfo}>
