@@ -23,9 +23,9 @@ const FirebaseAuthProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        onAuthStateChanged(auth, (currenUser) => {
+        const unsubscribe = onAuthStateChanged(auth, (currenUser) => {
             console.log(currenUser);
-            
+
             if (currenUser) {
                 setUser(currenUser)
             }
@@ -33,6 +33,9 @@ const FirebaseAuthProvider = ({ children }) => {
                 setUser(null)
             }
         })
+        return () => {
+            unsubscribe()
+        }
     }, [])
 
     const authInfo = { user, createUser, LoginUser, Logout };
