@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 import Swal from 'sweetalert2';
 import { useContext } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../Providers/FirebaseAuthProvider';
 
 
 const PrivetRoute = ({ children }) => {
-    const { user } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
+    const location = useLocation();
+    console.log(location);
     if (!user) {
         Swal.fire({
             title: "Error",
@@ -14,7 +16,7 @@ const PrivetRoute = ({ children }) => {
             icon: "error"
         });
         return (
-            <Navigate to="/login" />
+            <Navigate to="/login" state={location.pathname}/>
 
         )
 
