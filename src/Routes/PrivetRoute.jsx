@@ -6,9 +6,17 @@ import { AuthContext } from '../Providers/FirebaseAuthProvider';
 
 
 const PrivetRoute = ({ children }) => {
-    const { user } = useContext(AuthContext);
+    const { user, loading } = useContext(AuthContext);
     const location = useLocation();
     console.log(location);
+
+    if (loading) {
+        return (
+            <div className='flex justify-center h-screen'>
+                <span className="loading loading-spinner text-secondary w-10 md:w-20"></span>
+            </div>
+        )
+    }
     if (!user) {
         Swal.fire({
             title: "Error",
@@ -16,11 +24,12 @@ const PrivetRoute = ({ children }) => {
             icon: "error"
         });
         return (
-            <Navigate to="/login" state={location.pathname}/>
+            <Navigate to="/login" state={location.pathname} />
 
         )
 
     }
+
     return (
         <div>
             {children}
