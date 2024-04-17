@@ -54,7 +54,7 @@ const Navbar = () => {
                     </div>
                     <div className="">
                         <ul className={`top-0 text-base bg-[#dfa974] lg:bg-transparent  h-svh mr-2 font-Cabin uppercase lg:h-[21px] lg:flex gap-3 pt-[80px] pl-[30px] z-40 pr-[30px] pb-[30px] lg:p-0 absolute 
-                    ${showMenu ? "left-0 duration-300" : "-left-full duration-300"} w-[300px] lg:w-full lg:static left-0`}>
+                    ${showMenu ? "" : "hidden "} w-[300px] lg:w-full lg:static left-0`}>
                             <div className="mb-10 flex justify-center">
                                 <img src={hotel_Logo} alt="" />
                             </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
                                     </div>
                                 </>
                         }
-                        <button onClick={() => setShoeMenu(!showMenu)} className='lg:hidden text-[#dfa974]'><Hamburger label="Show menu" /></button>
+                        <button onClick={() => setShoeMenu(!showMenu)} className='lg:hidden text-[#dfa974] ml-2'><Hamburger label="Show menu" /></button>
                     </div>
                 </div>
             </div>
