@@ -1,9 +1,8 @@
 
-
 const Contact = () => {
     return (
         <div>
-           contact is here/// 
+            Contact .....
         </div>
     );
 };

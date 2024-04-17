@@ -1,19 +1,36 @@
 import { Link, NavLink } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import Swal from 'sweetalert2';
 import { CiLogin, CiLogout } from "react-icons/ci";
 import { MdOutlineSettings } from "react-icons/md";
 import { Twirl as Hamburger } from 'hamburger-react'
 import hotel_Logo from "../../../assets/site-logo.png"
 import Profile from "../../../assets/hotel_rooms_photos/profile.png"
-import Header from "../../../Components/Header/Header";
 import { AuthContext } from "../../../Providers/FirebaseAuthProvider";
 
 
 const Navbar = () => {
     const [showMenu, setShoeMenu] = useState(false);
     const [showProfile, setProfile] = useState(false);
+    const [scrolling, setScrolling] = useState(false);
     const { Logout, user } = useContext(AuthContext);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.addEventListener("scroll", handleScroll);
+    }, [])
+
+
+    const handleScroll = () => {
+        if (window.scrollY > 40) {
+            setScrolling(true);
+        } else {
+            setScrolling(false);
+        }
+    };
+
+
+    // Handle
     const handleSignOut = () => {
         Logout()
             .then(response => {
@@ -28,16 +45,16 @@ const Navbar = () => {
 
     return (
         <>
-            <Header></Header>
+            {/* <Header></Header> */}
             <div
-                className="bg-white">
+                className={`${scrolling ? "sticky top-0  duration-700 z-40 shadow-lg" : "-top-10"} bg-white`}>
                 <div className="w-11/12 max-w-6xl mx-auto navbar mt-3 lg:flex justify-between">
                     <div>
                         <img src={hotel_Logo} alt="" />
                     </div>
                     <div className="">
-                        <ul className={`top-0 text-base bg-[#dfa974] md:bg-white mr-2 font-Cabin uppercase h-full lg:h-[21px] lg:flex gap-3 pt-[80px] pl-[30px] z-40 pr-[30px] pb-[30px] lg:p-0 absolute 
-                    ${showMenu ? "" : "hidden"} w-[300px] lg:w-full lg:static left-0`}>
+                        <ul className={`top-0 text-base bg-[#dfa974] lg:bg-transparent  h-svh mr-2 font-Cabin uppercase lg:h-[21px] lg:flex gap-3 pt-[80px] pl-[30px] z-40 pr-[30px] pb-[30px] lg:p-0 absolute 
+                    ${showMenu ? "left-0 duration-300" : "-left-full duration-300"} w-[300px] lg:w-full lg:static left-0`}>
                             <div className="mb-10 flex justify-center">
                                 <img src={hotel_Logo} alt="" />
                             </div>

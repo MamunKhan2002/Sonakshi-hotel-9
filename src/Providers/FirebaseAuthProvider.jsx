@@ -9,7 +9,6 @@ import { createContext, useEffect, useState } from 'react';
 
 
 const auth = getAuth(app);
-
 export const AuthContext = createContext(null);
 
 // Social Providers

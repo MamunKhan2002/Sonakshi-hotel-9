@@ -7,9 +7,10 @@ import Login from "../Pages/Login/Login";
 import Gallery from "../Pages/Gallery/Gallery";
 import Rooms from "../Pages/Rooms/Rooms";
 import UserProfile from "../Pages/UserProfile/UserProfile";
-import Contact from "../Pages/Contact/Contact";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import RoomDetails from "../Pages/Rooms/RoomDetails";
+import Contact from "../Components/Contact/Contact";
+import PrivetRoute from "./PrivetRoute";
 
 const router = createBrowserRouter([
     {
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/roomCard/:id",
-                element: <RoomDetails></RoomDetails>
+                element: <PrivetRoute><RoomDetails></RoomDetails></PrivetRoute>
             },
             {
                 path: "/userProfile",
