@@ -30,22 +30,10 @@ const FirebaseAuthProvider = ({ children }) => {
     // Google Login
     const googleLogin = () => {
         return signInWithPopup(auth, googleProvider)
-            .then(response => {
-                console.log(response.user);
-            })
-            .catch(error => {
-                console.log(error.message)
-            })
     }
     // Github Login
     const GithubLogin = () => {
         return signInWithPopup(auth, githubProvider)
-            .then(response => {
-                console.log(response.user);
-            })
-            .catch(error => {
-                console.log(error.message)
-            })
     }
 
 
